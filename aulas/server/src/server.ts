@@ -1,3 +1,15 @@
-const nome: string = 'Maiko <3'
+import fastify from 'fastify'
 
-console.log(nome)
+// HTTP Method: GET, POST, PUT, PATCH, DELETE
+
+const app = fastify()
+
+app.get('/hello', () => {
+  return 'Hello World'
+})
+
+app.listen({
+  port:3333,
+}).then(() => {
+  console.log('HTTP server running on http://localhost:3333')
+})

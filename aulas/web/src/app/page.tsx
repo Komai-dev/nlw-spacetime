@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <h1>
       Hello World
-      <Button />
+      <Button title="Maiko" />
+      <Button title="Billy" />
+      <Button title="Smith Costa" />
     </h1>
   )
 }

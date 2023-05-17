@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <div className="text-2xl font-bold uppercase w-20 h-20 bg-red-300 rounded-3xl m-10">
-      <p className="m-auto">oi</p>
+      <p className="align-middle">oi</p>
     </div>
   )
 }

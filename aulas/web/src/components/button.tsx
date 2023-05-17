@@ -1,5 +1,9 @@
+const styles = {
+  color: '#f00',
+}
+
 export function Button() {
   return (
-    <p>Botão</p>
+    <p style={styles}>Botão</p>
   )
 }

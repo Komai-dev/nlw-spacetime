@@ -1,7 +1,7 @@
 // TypeScript + JSX = TSX //
 // JSX = Java Script + XML (sintaxe do html) //
-import { Copyright } from '@/components/copyright'
-import { EmptyMemories } from '@/components/Emptymemories'
+import { Copyright } from '@/components/Copyright'
+import { EmptyMemories } from '@/components/EmptyMemories'
 import { Hero } from '@/components/Hero'
 import { SignIn } from '@/components/Sign-in'
 

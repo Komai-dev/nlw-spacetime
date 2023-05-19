@@ -8,8 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'var(--font-roboto)',
+        sans: 'var(--font-robotoFlex)',
         alt: 'var(--font-baiJamjure)',
+      },
+      fontSize: {
+        '5xl': '2.5rem',
       },
 
       colors: {

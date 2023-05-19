@@ -8,7 +8,7 @@ export function Hero() {
       <Image src={nlwLogo} alt="NLW Spacetime" />
 
       <div className="max-w-[420px] space-y-4">
-        <h1 className="text-4xl font-bold leading-tight text-gray-50">
+        <h1 className="font-sans text-4xl leading-tight text-gray-50">
           Sua cápsula do tempo
         </h1>
         <p className="text-lg leading-relaxed">

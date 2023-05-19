@@ -8,7 +8,7 @@ import {
 const robotoFlex = Roboto({ subsets: ['latin'], variable: '--font-robotoFlex' })
 const baiJamjuree = BaiJamjuree({
   subsets: ['latin'],
-  variable: '--font-baiJamjure',
+  variable: '--font-baiJamjuree',
   weight: '700',
 })
 

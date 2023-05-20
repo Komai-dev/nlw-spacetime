@@ -22,7 +22,7 @@ export async function authRoutes(app: FastifyInstance) {
           code,
         },
         headers: {
-          Accept: 'Application/json',
+          Accept: 'application/json',
         },
       },
     )

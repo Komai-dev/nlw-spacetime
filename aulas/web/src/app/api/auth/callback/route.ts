@@ -15,9 +15,11 @@ export async function GET(request: NextRequest) {
 
   console.log(token)
 
+  const cookieExpiresInSeconds = 60 * 60 * 24 * 90
+
   return NextResponse.redirect(redirectURL, {
     headers: {
-      'Set-Cookie': `token=${token}; Path=/;`,
+      'Set-Cookie': `token=${token}; Path=/; max-age=${cookieExpiresInSeconds}`,
     },
   })
 }

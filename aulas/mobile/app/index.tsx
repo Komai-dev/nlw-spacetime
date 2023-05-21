@@ -1,5 +1,8 @@
 import { StatusBar } from 'expo-status-bar'
+import { useEffect } from 'react'
 import { ImageBackground, TouchableOpacity, View, Text } from 'react-native'
+import { makeRedirectUri, useAuthRequest } from 'expo-auth-session'
+import { styled } from 'nativewind'
 import * as SecureStore from 'expo-secure-store'
 
 import {
@@ -12,9 +15,9 @@ import { BaiJamjuree_700Bold } from '@expo-google-fonts/bai-jamjuree'
 import blurBg from '../src/assets/bg-blur.png'
 import Stripes from '../src/assets/stripes.svg'
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
-import { styled } from 'nativewind'
-import { makeRedirectUri, useAuthRequest } from 'expo-auth-session'
-import { useEffect } from 'react'
+
+
+
 import { api } from '../src/lib/api'
 
 const StyledStripes = styled(Stripes)

@@ -33,7 +33,7 @@ export default function App() {
     BaiJamjuree_700Bold,
   })
 
-  const [request, response, signInWithGithub] = useAuthRequest(
+  const [, response, signInWithGithub] = useAuthRequest(
     {
       clientId: '942847aabf37b8b402dc',
       scopes: ['identity'],
@@ -46,13 +46,11 @@ export default function App() {
 
   useEffect(() => {
     // roda esse código caso queira ver (terminal) qual a URL pra fazer a autenticação
-    //  console.log(
-    //    makeRedirectUri({
-    //      scheme: 'nlwspacetime',
-    //    }),
-    //  )
-
-    console.log(response)
+    // console.log(
+    //   makeRedirectUri({
+    //     scheme: 'nlwspacetime',
+    //   }),
+    // )
 
     if (response?.type === 'success') {
       const { code } = response.params
@@ -63,7 +61,7 @@ export default function App() {
         })
         .then((response) => {
           const { token } = response.data
-
+          console.log(response.data)
           SecureStore.setItemAsync('token', token)
         })
         .catch((err) => {

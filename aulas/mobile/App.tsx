@@ -23,7 +23,7 @@ const discovery = {
   authorizationEndpoint: 'https://github.com/login/oauth/authorize',
   tokenEndpoint: 'https://github.com/login/oauth/access_token',
   revocationEndpoint:
-    'https://github.com/settings/connections/applications/<942847aabf37b8b402dc>',
+    'https://github.com/settings/connections/applications/942847aabf37b8b402dc',
 }
 
 export default function App() {
@@ -65,6 +65,9 @@ export default function App() {
           const { token } = response.data
 
           SecureStore.setItemAsync('token', token)
+        })
+        .catch((err) => {
+          console.error(err)
         })
     }
   }, [response])
